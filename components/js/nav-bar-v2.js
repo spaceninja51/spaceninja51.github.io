@@ -13,7 +13,7 @@ styleSheet.href = '/components/css/nav-bar-v2.css';
 // TODO: Build menu array from directory
 defineMenuItems = () => {
     return [
-        {text: 'Home', href: '/pages/index.html'},
+        {text: 'Home', href: '/index.html'},
         {text: 'Sandbox', href:'/pages/sandbox/sandbox.html'},
         {text: 'Github', href: 'https://github.com/spaceninja51', target: '_blank', class: 'right'}
     ]
