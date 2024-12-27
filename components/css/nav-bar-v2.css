@@ -1,0 +1,41 @@
+#siteMenu {
+    background-color: rgb(117, 0, 0);
+    border: 0.4em outset rgb(147, 0, 0);
+    margin: 0 15% 0 15%;
+    display:flex;
+    align-items:center; /* Vertically center items */
+    justify-content: center;
+}
+
+#siteMenu a {
+    color: white;
+    text-decoration: none;
+    border: outset rgb(157, 0, 0);
+    margin: 0.15em;
+    padding-left: 0.1em;
+    padding-right: 0.1em;
+}
+
+#siteMenu a:link,
+#siteMenu a:visited {
+    color: white;
+    text-decoration: none;
+    border: outset rgb(157, 0, 0);
+}
+
+#siteMenu a:hover {
+    transition: 0.25s;
+    color: red;
+    background-color: black;
+    border-style: inset;
+}
+
+#siteMenu a.active {
+    background-color: black;
+    color: red;
+    border-style: inset;
+}
+
+#siteMenu a.right {
+    margin-left: auto; /* Pushes this item to the right */
+}
