@@ -15,7 +15,8 @@ defineMenuItems = () => {
     return [
         {text: 'Home', href: '/index.html'},
         {text: 'Sandbox', href:'/pages/sandbox/sandbox.html'},
-        {text: 'Github', href: 'https://github.com/spaceninja51', target: '_blank', class: 'right'}
+        {text: 'My Github', href: 'https://github.com/spaceninja51', target: '_blank', class: 'right'},
+        {text: 'This Repo', href: 'https://github.com/spaceninja51/spaceninja51.github.io', target: '_blank'}
     ]
 }
 
