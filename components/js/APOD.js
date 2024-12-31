@@ -13,20 +13,15 @@ function todayString(delimiter) {
     today = String(today);
     return today
 }
-function updataApod() {
-    // Set desired target elements to variables for convenience
-    const title = document.getElementById("apodTitle");
-    const photo = document.getElementById("apod");
-    const explanation = document.getElementById("apodExplanation");
-    // Reads the day's json file, setting the appropriate element values
-    fetch(`data/${todayString('-')}.json`)
-        .then(res => res.json())
-        .then(res => {
-            const picData = res;
-            title.textContent = picData.title
-            photo.src = picData.url;
-            explanation.textContent = picData.explanation
-        });
-    }
-// Actually updates the page
-updataApod();
+function todayApod() {
+    // Gets today's entry
+    fetch('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY')
+    .then(res => res.json())
+    .then(res => {
+        const picData = res;
+        return picData;
+    });
+    document.getElementById("apodTitle") = picData.title;
+    document.getElementById("apodPhoto").src = picData.hdurl;
+    document.getElementById("apodExplanation") = picData.explanation;
+}
