@@ -1,0 +1,31 @@
+.photoEntry {
+    text-align: center;
+    color: #ffb700;
+    background-color: #140702;
+    padding: 0.5em 0 1em 0;
+    border: inset inset outset outset;
+    border-width: 1.5em;
+    border-color: #792a10;
+    margin: 1em 5%;
+}
+
+.photoEntry section {
+    display: inline;
+    font-family: 'Courier New', Courier;
+    font-weight: bold;
+}
+
+.photoEntry figure > img {
+    width: 60%;
+    height: 60%;
+    background-color: white;
+    padding: 0.5em 0 2em 0;
+}
+
+.photoEntry figcaption {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
+    padding: 0 5%;
+    text-align: justify;
+    font-size: 60%;
+}
