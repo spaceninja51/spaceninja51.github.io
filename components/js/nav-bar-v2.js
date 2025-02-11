@@ -38,6 +38,7 @@ const createMenuItem = (item) => {
 
 // Function to render the navigation 
 // menu and attach it to the DOM
+// Determines and sets the active page
 const renderNavMenu = () => {
     const menuItems = defineMenuItems();
     menuItems.forEach(item => {
