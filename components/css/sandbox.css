@@ -1,0 +1,11 @@
+#toybox {
+    display:flex;
+    flex-direction: column;
+    gap: 0.3em;
+}
+
+details summary{
+    border: outset;
+    color:black;
+    background-color: white;
+}
