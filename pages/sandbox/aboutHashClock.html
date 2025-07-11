@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Header-->
+<head>
+    <!--Metadata-->
+    <meta charset="UTF-8",name="viewport"content="width=device-width",initial-scale="1.0">
+    <!---Name in the tab-->
+    <title id="page">Hash Clock Explanation</title>
+    <script src="/components/js/nav-bar-v2.js" type="text/javascript" defer></script>
+    <link rel="stylesheet" href="/components/css/darkish.css">
+</head>
+<body>
+    <h1>Hash Clock Explanation</h1>
+    <p>Recently, I've been obsessed with the idea of hashing and am amazed at the complete 
+        randomness of it. There are tons of hashing algorithims but since SHA256 is the most
+        common, I used that.
+    </p>
+    <p> These algorithims take any string as an input and then converts that into a hash of 
+        consistant length, in this case 64 characters, regardless of how long the input is.
+        Hashes are also deterministic, the same input will always give the same output. this
+        is extremely useful in security since it can be used to compare 2 strings without doing
+        so directly.
+    </p>
+    <details>
+        <summary>But why?</summary>
+        <p>Let's say a website wants to have password security. The most obvious solution is to
+            have the user send their password to the server and then compare it to the stored password.
+            But, if someone intercepts that text they then have the user's password, no good.
+        </p>
+        <p>
+            Hashes are used instead, because it is currently impossible to go from a hash to the 
+            message that was run through the algorithm. The hashes are stored instead and checked against.
+        </p>
+        <p>
+            For Example, if your password is "password123" then its SHA256 will always be
+            "EF92B778BAFE771E89245B89ECBC08A44A4E166C06659911881F383D4473E94F".
+        </p>
+        <p>This is the value stored by the server.</p>
+        <p>
+            When logging in, instead of sending your password to the server directly your browser sends the hash
+            of the password. If the two match, you are logged in. If there is any difference, then we know the 
+            value is incorrect. We don't know how or why it is incorrect. Just that it is.
+        </p>
+    </details>
+    <p>
+        The clock itself, while not bery useful for telling time, is good at coming up with completely random colors.
+        Each row represents the hash of a time string (for example "Mon Mar 03 2025 14:12:11 GMT-0500 (Eastern Standard Time)")
+    </p>    
+    <p>    
+        Hex codes for colors are made of 6 characters, so I divide the hash into strings of 6 characters. So every second,
+        we get a new random color set. All thats left is 4 characters that I haven't figured out what to do with yet.
+    </p>
+</body>
