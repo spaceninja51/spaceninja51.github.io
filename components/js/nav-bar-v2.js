@@ -14,6 +14,7 @@ styleSheet.href = '/components/css/nav-bar-v2.css';
 defineMenuItems = () => {
     return [
         {text: 'Home', href: '/index.html'},
+        {text: 'Sandbox', href: '/pages/sandbox/sandbox.html'},
         // Below this, items go to the right
         {text: 'My Github', href: 'https://github.com/spaceninja51', target: '_blank', class: 'right'},
         {text: 'This Repo', href: 'https://github.com/spaceninja51/spaceninja51.github.io', target: '_blank'}
