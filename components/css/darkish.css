@@ -1,0 +1,16 @@
+/* Chat GPT's Version */
+body {
+    background-color: black;
+    color: white;
+    font-size: 2em;
+    font-family: monospace;
+}
+
+h1 {
+    color: red;
+    text-align: left;
+}
+
+h2 {
+    color: brown;
+}
